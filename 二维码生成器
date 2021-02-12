@@ -1,0 +1,13 @@
+import qrcode
+
+
+def function1(a):
+
+    ok = a
+    img = qrcode.make(ok)
+    img.save(img\ok+'.png')
+    return (((('“' + ok) + '.png') + '“') + '生成完毕')
+
+print(function1(input('your text')))
+#Please create a new "img" folder in this code, otherwise there will be a bug. thank you.
+#请在这串代码中新建一个‘img’文件夹，否则会有bug。谢谢。
